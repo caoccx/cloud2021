@@ -8,8 +8,13 @@
     1、建module
     2、改pom
     3、写yml
-    4、主启动
-    5、业务类
+    4、主启动 :PaymentMain8001.class
+    5、业务类：
+        （1）建表sql
+        （2）entities：实体类，Json封装体CommonResult
+        （3）dao
+        （4）service
+        （5）contoller
 3、代码构建
     1、约定》配置》编码
     2：步骤：

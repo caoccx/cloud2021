@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.itcc.cloud.dao.PaymentDao">
+    <!-- useGeneratedKeys="true" 插入成功返回1 否则是0  keyProperty主键-->
+    <insert id="createPayment" parameterType="Payment" useGeneratedKeys="true" keyProperty="id">
+        insert into payment(serial) values (#{serial})
+    </insert>
+
+    <!--column 数据库字段名
+        property Java字段名
+        javaType 类型
+    -->
+    <resultMap id="BaseResultMap" type="com.itcc.cloud.entities.Payment">
+        <id column="id" property="id" jdbcType="BIGINT"/>
+        <id column="serial" property="serial" jdbcType="VARCHAR"/>
+    </resultMap>
+    <select id="getPaymentById" parameterType="long" resultMap="BaseResultMap">
+        select * from payment where id = #{id}
+    </select>
+</mapper>
