@@ -7,14 +7,13 @@ import lombok.NoArgsConstructor;
 import java.io.Serializable;
 
 /**
- * Created by caocaixia on 2021/2/23 20:30
+ * Created by caocaixia on 2021/2/24 12:39
  */
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
 public class Payment implements Serializable {
-    private Integer id;
+
+    private Long id;
     private String serial;
-
-
 }

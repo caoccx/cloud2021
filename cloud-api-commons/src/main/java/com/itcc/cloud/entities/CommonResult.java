@@ -5,17 +5,17 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 /**
- * Created by caocaixia on 2021/2/23 20:31
+ * Created by caocaixia on 2021/2/24 12:40
  */
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class CommonResult <T>{
-    private Integer code;
+public class CommonResult<T>{
+    private int code;
     private String message;
     private T data;
 
-    public CommonResult(Integer code, String message) {
+    public CommonResult(int code, String message) {
         this(code,message,null);
     }
 }
