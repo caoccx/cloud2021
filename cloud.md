@@ -1,3 +1,6 @@
+moudle8004:是zookeeper项目
+
+
 注意：
 1、dependencyManagement和dependencies
 (1)dependencyManagement只用在父pom文件中
