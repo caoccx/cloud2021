@@ -20,7 +20,7 @@
         <!--springboot 整合zookeeper客户端-->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-consul</artifactId>
+            <artifactId>spring-cloud-starter-consul-discovery</artifactId>
             <!--            &lt;!&ndash;排除自带的3.5.3版本&ndash;&gt;-->
             <!--            <exclusions>-->
             <!--                <exclusion>-->

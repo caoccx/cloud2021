@@ -25,7 +25,7 @@ public class ConsumerConsulController {
 
 
     @GetMapping("/consumer/payment/consul")
-    public String getConsul(){
+    public String getConsulInfo(){
         String result = restTemplate.getForObject(CONSUL_URL+"/payment/consul", String.class);
         return result;
     }
