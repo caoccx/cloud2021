@@ -14,7 +14,7 @@ import javax.annotation.Resource;
 public class ApplicationContextConfig {
 
     @Bean
-    @LoadBalanced //负载均衡机制
+    //@LoadBalanced //负载均衡机制
     public RestTemplate getRestTemplate(){
         return new RestTemplate();
     }
