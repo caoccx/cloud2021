@@ -66,7 +66,6 @@ public class OrderController {
         URI uri = serviceInstance.getUri();
         log.info("请求： {}",restTemplate.getForObject(uri + "/payment/lb", String.class));
         return restTemplate.getForObject(uri + "/payment/lb", String.class);
-
     }
 
 }
