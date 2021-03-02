@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.itcc.cloud.dao.MobilesmsDao">
+    <!-- useGeneratedKeys="true" 插入成功返回1 否则是0  keyProperty主键-->
+    <insert id="insertMobile" parameterType="Mobilesms" useGeneratedKeys="true" keyProperty="id">
+        insert into Mobilesms(userId,mobile,billMonth,time,peerNumber,location,sendType,msgType,serviceName,fee,createTime,lastModifyTime)
+        values (#{userId},#{mobile},#{billMonth},#{time},#{peerNumber},#{location},#{sendType},#{msgType},#{serviceName},#{fee},#{createTime},#{lastModifyTime})
+    </insert>
+
+
+
+</mapper>
