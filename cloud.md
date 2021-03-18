@@ -59,6 +59,8 @@ moudle8004:是zookeeper项目
         <artifactId>cloud-api-commons</artifactId>
         <version>${project.version}</version>
         </dependency>
+//OpenFegin
+微服务接口+@FeignClient(接口+注解)
 
 
 
